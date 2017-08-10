@@ -38,7 +38,7 @@ public class StaffDataBase implements Aggregate {
 //		bankStaff.add(bs);
 //
 //		// creating a credit staff
-//		creditStaff = new ArrayList<>();
+		creditStaff = new ArrayList<>();
 //		CreditStaff cs = new CreditStaff();
 //
 //		cs.setFname("credit");

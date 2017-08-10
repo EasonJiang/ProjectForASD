@@ -76,7 +76,7 @@ public class JDialog_CheckMail extends JDialog {
                 
                 JTextField_To.setBounds(78,54,156,24);
                 JTextField_To.setEnabled(false);
-                JTextField_To.setText(account.getCustomer().getName());  // replace with email
+//                JTextField_To.setText(account.getCustomer().getName());  // replace with email
                 getContentPane().add(JTextField_To);
                 
                 JLabel3.setText("Date :");
@@ -105,7 +105,7 @@ public class JDialog_CheckMail extends JDialog {
                 textArea.setBounds(20,160,540,160);
                 scrollPane.setBounds(20,160,540,130);
                 scrollPane.getViewport().add(textArea);
-                textArea.setText(account.getEmail());
+//                textArea.setText(account.getEmail());
                  getContentPane().add(scrollPane);
                 
                 

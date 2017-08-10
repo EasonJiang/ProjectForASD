@@ -40,6 +40,10 @@ import javax.swing.JPanel;
  */
 public class BankFrm extends javax.swing.JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7943675154895901055L;
 	AccountService accountService = ServiceFactory.createAccountService();
 	AccountFactory accountFactory = new BankAccountFactory();
 
@@ -75,11 +79,11 @@ public class BankFrm extends javax.swing.JFrame {
 	JButton undoBut = new JButton();
 	JButton redoBut = new JButton();
 	JButton transferBut = new JButton();
-//	 JButton sendEmail=new JButton("Send Mail");
-	 JButton complaintsButton=new JButton("Complaint Report");
-	 JButton reportButton=new JButton("Generate Report");
+	// JButton sendEmail=new JButton("Send Mail");
+	JButton complaintsButton = new JButton("Complaint Report");
+	JButton reportButton = new JButton("Generate Report");
 
-	 JButton sendEmail=new JButton("Send Mail");
+	JButton sendEmail = new JButton("Send Mail");
 	Box vbox = Box.createVerticalBox();
 
 	public void mouthHover(JButton jbt) {
@@ -126,8 +130,8 @@ public class BankFrm extends javax.swing.JFrame {
 		myframe = this;
 
 		setTitle("Bank Application.");
-//		setDefaultCloseOperation(javax.swing.JFrame.DO_NOTHING_ON_CLOSE);
-		 getContentPane().setLayout(new BorderLayout());
+		// setDefaultCloseOperation(javax.swing.JFrame.DO_NOTHING_ON_CLOSE);
+		getContentPane().setLayout(new BorderLayout());
 		setSize(1920, 1080);
 		setVisible(false);
 		// setResizable(false);
@@ -149,7 +153,7 @@ public class BankFrm extends javax.swing.JFrame {
 		 */
 
 		checkMailButton = new JButton("Check Mail");
-		 checkMailButton.setForeground(java.awt.Color.white);
+		// checkMailButton.setForeground(java.awt.Color.white);
 		//
 		// checkMailButton.setBackground(new Color(95,95,95));
 		// checkMailButton.setContentAreaFilled(false);
@@ -167,7 +171,7 @@ public class BankFrm extends javax.swing.JFrame {
 		// checkMailButton.setForeground(java.awt.Color.white);
 		// }
 		// })}
-//		mouthHover(checkMailButton);
+		// mouthHover(checkMailButton);
 
 		Dimension buttonDimension = checkMailButton.getMaximumSize();
 
@@ -216,7 +220,7 @@ public class BankFrm extends javax.swing.JFrame {
 		JButton_PerAC.setText("Add personal account");
 		panel2.add(JButton_PerAC);
 		JButton_PerAC.setBounds(24, 20, 192, 33);
-//		mouthHoverbar(JButton_PerAC);
+		// mouthHoverbar(JButton_PerAC);
 		// JButton_PerAC.setFont(new Font("Arial",Font.PLAIN,18));
 
 		// JButton_PerAC.setBackground(Color.BLACK);
@@ -235,19 +239,19 @@ public class BankFrm extends javax.swing.JFrame {
 
 		JButton_CompAC.setText("Add company account");
 		JButton_CompAC.setActionCommand("jbutton");
-//		mouthHoverbar(JButton_CompAC);
+		// mouthHoverbar(JButton_CompAC);
 		panel2.add(JButton_CompAC);
 
 		// JButton_CompAC.setFont(new Font("Arial",Font.PLAIN,18));
 		JButton_CompAC.setBounds(240, 20, 192, 33);
- 
+
 		////// JPanel1///////////////////
 
 		JButton_Withdraw.setText("Withdraw");
 		// Dimension dimForJButton_Withdraw=JButton_Withdraw.getPreferredSize();
 
 		JButton_Withdraw.setMaximumSize(buttonDimension);
-//		mouthHover(JButton_Withdraw);
+		// mouthHover(JButton_Withdraw);
 		// JButton_Withdraw.setForeground(java.awt.Color.white);
 		// JButton_Withdraw.setBackground(new Color(95,95,95));
 		// JButton_Withdraw.setFont(new Font("Arial",Font.PLAIN,20));
@@ -255,7 +259,7 @@ public class BankFrm extends javax.swing.JFrame {
 		JButton_Deposit.setText("Deposit");
 
 		JButton_Deposit.setMaximumSize(buttonDimension);
-//		mouthHover(JButton_Deposit);
+		// mouthHover(JButton_Deposit);
 		// JButton_Deposit.setForeground(java.awt.Color.white);
 		// JButton_Deposit.setBackground(new Color(95,95,95));
 		// JButton_Deposit.setFont(new Font("Arial",Font.PLAIN,20));
@@ -272,7 +276,7 @@ public class BankFrm extends javax.swing.JFrame {
 		JButton_Exit.setText("Exit");
 
 		JButton_Exit.setMaximumSize(buttonDimension);
-//		mouthHover(JButton_Exit);
+		// mouthHover(JButton_Exit);
 		// JButton_Exit.setForeground(java.awt.Color.white);
 		// JButton_Exit.setBackground(new Color(95,95,95));
 		// JButton_Exit.setFont(new Font("Arial",Font.PLAIN,20));
@@ -287,53 +291,53 @@ public class BankFrm extends javax.swing.JFrame {
 
 		JButton_Addinterest.setBounds(448, 20, 106, 33);
 		JButton_Addinterest.setText("Add interest");
-//		mouthHoverbar(JButton_Addinterest);
+		// mouthHoverbar(JButton_Addinterest);
 		// JButton_Addinterest.setFont(new Font("Arial",Font.PLAIN,20));
 		panel2.add(JButton_Addinterest);
 		//////////////////////////////////////// Extra Features
 		//////////////////////////////////////// ////////////////////
 		transactionBut.setText("Transaction");
 		transactionBut.setBounds(570, 20, 100, 33);
-//		mouthHoverbar(transactionBut);
+		// mouthHoverbar(transactionBut);
 		// transactionBut.setFont(new Font("Arial",Font.PLAIN,20));
 		panel2.add(transactionBut);
 
 		accountsBut.setText("Visit Personal Account");
-//		mouthHoverbar(accountsBut);
+		// mouthHoverbar(accountsBut);
 		// accountsBut.setFont(new Font("Arial",Font.PLAIN,20));
 		accountsBut.setBounds(686, 20, 120, 33);
 		panel2.add(accountsBut);
 
 		transferBut.setText("Transfer Funds");
-//		mouthHoverbar(transferBut);
+		// mouthHoverbar(transferBut);
 		// transferBut.setFont(new Font("Arial",Font.PLAIN,20));
 		transferBut.setBounds(822, 20, 120, 33);
 		panel2.add(transferBut);
 
-		 undoBut.setText("Undo");
-//		 mouthHoverbar(undoBut);
-		 // undoBut.setFont(new Font("Arial",Font.PLAIN,20));
-		 undoBut.setBounds(958,20,60,33);
-		 panel2.add(undoBut);
+		undoBut.setText("Undo");
+		// mouthHoverbar(undoBut);
+		// undoBut.setFont(new Font("Arial",Font.PLAIN,20));
+		undoBut.setBounds(958, 20, 60, 33);
+		panel2.add(undoBut);
 
-		 redoBut.setText("Redo");
-//		 mouthHoverbar(redoBut);
-		 // redoBut.setFont(new Font("Arial",Font.PLAIN,20));
-		 redoBut.setBounds(1034,20,60,33);
-		 panel2.add(redoBut);
+		redoBut.setText("Redo");
+		// mouthHoverbar(redoBut);
+		// redoBut.setFont(new Font("Arial",Font.PLAIN,20));
+		redoBut.setBounds(1034, 20, 60, 33);
+		panel2.add(redoBut);
 
-		 sendEmail.setBounds(1110,20,75,33);
+		sendEmail.setBounds(1110, 20, 75, 33);
 		// mouthHoverbar(sendEmail);
 		// // sendEmail.setFont(new Font("Arial",Font.PLAIN,20));
-		 panel2.add(sendEmail);
-//		 mouthHoverbar(reportButton);
+		panel2.add(sendEmail);
+		// mouthHoverbar(reportButton);
 		// // reportButton.setFont(new Font("Arial",Font.PLAIN,20));
-		 reportButton.setBounds(1280, 20, 80, 33);
-		 panel2.add(reportButton);
+		reportButton.setBounds(1280, 20, 80, 33);
+		panel2.add(reportButton);
 		// mouthHoverbar(complaintsButton);
 		// // complaintsButton.setFont(new Font("Arial",Font.PLAIN,20));
-		 complaintsButton.setBounds(1190,20,80,33);
-		 panel2.add(complaintsButton);
+		complaintsButton.setBounds(1190, 20, 80, 33);
+		panel2.add(complaintsButton);
 
 		// lineBorder1.setRoundedCorners(true);
 		// lineBorder1.setLineColor(java.awt.Color.green);
@@ -356,10 +360,10 @@ public class BankFrm extends javax.swing.JFrame {
 		redoBut.addActionListener(lSymAction);
 		transferBut.addActionListener(lSymAction);
 		transactionBut.addActionListener(lSymAction);
-		// sendEmail.addActionListener(lSymAction);
+		 sendEmail.addActionListener(lSymAction);
 		checkMailButton.addActionListener(lSymAction);
-		// reportButton.addActionListener(lSymAction);
-		// complaintsButton.addActionListener(lSymAction);
+		 reportButton.addActionListener(lSymAction);
+		 complaintsButton.addActionListener(lSymAction);
 	}
 
 	/*****************************************************
@@ -445,18 +449,16 @@ public class BankFrm extends javax.swing.JFrame {
 				transferButtonActionPerformed(event);
 			else if (object == transactionBut)
 				transactionbuttonActionPerformed(event);
-			// else if(object==sendEmail)
-			// sendEmailToAllCustomers(event);
+			else if (object == sendEmail)
+				sendEmailToAllCustomers(event);
 
 			else if (object == checkMailButton) {
 				checkMailActionPerformed(event);
+			} else if (object == reportButton) {
+				reportActionPerformed(event);
+			} else if (object == complaintsButton) {
+				complaintsActionPerformed(event);
 			}
-			// else if(object==reportButton){
-			// reportActionPerformed(event);
-			// }
-			// else if(object==complaintsButton){
-			// complaintsActionPerformed(event);
-			// }
 
 		}
 	}
@@ -499,7 +501,8 @@ public class BankFrm extends javax.swing.JFrame {
 			checkMail.setBounds(200, 20, 600, 350);
 			checkMail.setResizable(false);
 			checkMail.show();
-			System.out.println(accountService.getAccountHashmap(accnr).getEmail() + "" + "Email has been recieved");
+			// System.out.println(accountService.getAccountHashmap(accnr).getEmail()
+			// + "" + "Email has been recieved");
 		}
 
 	}

@@ -79,9 +79,7 @@ public class UserLoginController extends Application {
 	// For Login
 	public void btnLoginActionListener(ActionEvent e) {
 		boolean validStaff = false;
-		System.out.println("213924898273427");
 		if (rdBank.isSelected()) {
-			System.out.println("******");
 			staffType = "bankStaff";
 			if (authenticateBankStaff()) {
 				
@@ -93,9 +91,10 @@ public class UserLoginController extends Application {
 		} else if (rdCredit.isSelected()) {
 			staffType = "creditStaff";
 			if (authenticateCreditStaff()) {
-				new CardFrm().creditMain();
-				primaryStage.close();
 				validStaff = true;
+				CardFrm.creditMain();
+//				primaryStage.close();
+				
 			}
 		}
 		
@@ -134,7 +133,7 @@ public class UserLoginController extends Application {
 		String password = txtPassword.getText().toString();
 		boolean authenticated = false;
 		
-		Iterator staffIterator = StaffDataBase.getStaffDBInstance().getIterator(staffType);
+		Iterator staffIterator = StaffDataBase.getStaffDBInstance().getIterator("bankStaff");
 
 		while(staffIterator.hasNext()){
 			Staff bs = staffIterator.next();

@@ -252,7 +252,6 @@
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Algerian" size="14" isBold="true" isUnderline="true"/>
 				</textElement>
 				<text><![CDATA[Account Information]]></text>
 			</staticText>
